@@ -18,6 +18,7 @@
         <property id="1587916991969465369" name="conceptId" index="1pbfSe" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
       </concept>
+      <concept id="1169125989551" name="jetbrains.mps.lang.structure.structure.InterfaceConceptDeclaration" flags="ig" index="PlHQZ" />
       <concept id="1169127622168" name="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" flags="ig" index="PrWs8">
         <reference id="1169127628841" name="intfc" index="PrY4T" />
       </concept>
@@ -41,9 +42,9 @@
   <node concept="1TIwiD" id="5NejMmYd6Iu">
     <property role="1pbfSe" value="453163715" />
     <property role="TrG5h" value="Dependency" />
-    <property role="34LRSv" value="dependency" />
-    <property role="R4oN_" value="dependency routine declaration" />
-    <ref role="1TJDcQ" node="2_Omw6Np3uK" resolve="AbtractRoutine" />
+    <property role="34LRSv" value="run in order" />
+    <property role="R4oN_" value="ordered routine run" />
+    <ref role="1TJDcQ" to="tpee:fzclF8l" resolve="Statement" />
     <node concept="1TJgyj" id="5NejMmYd6Iz" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="dependencies" />
@@ -59,13 +60,13 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="task" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="2_Omw6Nn9eF" resolve="RoutineReference" />
+      <ref role="20lvS9" node="34$p7Z$c$l5" resolve="IRoutineToken" />
     </node>
     <node concept="1TJgyj" id="5NejMmYd6IE" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="dependencies" />
       <property role="20lbJX" value="1..n" />
-      <ref role="20lvS9" node="2_Omw6Nn9eF" resolve="RoutineReference" />
+      <ref role="20lvS9" node="34$p7Z$c$l5" resolve="IRoutineToken" />
     </node>
     <node concept="1TJgyj" id="2_Omw6NotCd" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -75,17 +76,20 @@
   </node>
   <node concept="1TIwiD" id="2_Omw6NlBU9">
     <property role="1pbfSe" value="590686070" />
-    <property role="TrG5h" value="StatementRoutine" />
+    <property role="TrG5h" value="RoutineDeclaration" />
     <property role="34LRSv" value="routine" />
     <property role="R4oN_" value="statement routine declaration" />
     <property role="R5$K2" value="true" />
     <property role="R5$K7" value="false" />
-    <ref role="1TJDcQ" node="2_Omw6Np3uK" resolve="AbtractRoutine" />
+    <ref role="1TJDcQ" to="tpee:fzclF8l" resolve="Statement" />
     <node concept="1TJgyj" id="2_Omw6NlHmF" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="statement" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" to="tpee:fzclF8l" resolve="Statement" />
+    </node>
+    <node concept="PrWs8" id="34$p7Z$bcmz" role="PzmwI">
+      <ref role="PrY4T" to="tpee:hCUYCKd" resolve="IValidIdentifier" />
     </node>
   </node>
   <node concept="1TIwiD" id="2_Omw6Nn9eF">
@@ -95,30 +99,43 @@
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="routine" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="2_Omw6Np3uK" resolve="AbtractRoutine" />
+      <ref role="20lvS9" node="2_Omw6NlBU9" resolve="RoutineDeclaration" />
     </node>
-  </node>
-  <node concept="1TIwiD" id="2_Omw6Np3uK">
-    <property role="1pbfSe" value="589786703" />
-    <property role="TrG5h" value="AbtractRoutine" />
-    <property role="R5$K7" value="true" />
-    <ref role="1TJDcQ" to="tpee:fzclF8l" resolve="Statement" />
-    <node concept="PrWs8" id="2_Omw6Np4fc" role="PzmwI">
-      <ref role="PrY4T" to="tpee:hCUYCKd" resolve="IValidIdentifier" />
+    <node concept="PrWs8" id="34$p7Z$c$K3" role="PzmwI">
+      <ref role="PrY4T" node="34$p7Z$c$l5" resolve="IRoutineToken" />
     </node>
   </node>
   <node concept="1TIwiD" id="2_Omw6NplMe">
     <property role="1pbfSe" value="589711729" />
     <property role="TrG5h" value="RoutineRunStatement" />
     <property role="34LRSv" value="run" />
-    <property role="R4oN_" value="routine run statement" />
+    <property role="R4oN_" value="single routine run" />
     <ref role="1TJDcQ" to="tpee:fzclF8l" resolve="Statement" />
     <node concept="1TJgyj" id="2_Omw6Npmen" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="ref" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="2_Omw6Nn9eF" resolve="RoutineReference" />
+      <ref role="20lvS9" node="34$p7Z$c$l5" resolve="IRoutineToken" />
     </node>
+  </node>
+  <node concept="1TIwiD" id="34$p7Z$co9O">
+    <property role="1pbfSe" value="357951219" />
+    <property role="TrG5h" value="InlineRoutine" />
+    <property role="R4oN_" value="inline routine declaration" />
+    <property role="34LRSv" value="[routine]" />
+    <node concept="1TJgyj" id="34$p7Z$co9P" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="statement" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="tpee:fzclF8l" resolve="Statement" />
+    </node>
+    <node concept="PrWs8" id="34$p7Z$c$mf" role="PzmwI">
+      <ref role="PrY4T" node="34$p7Z$c$l5" resolve="IRoutineToken" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="34$p7Z$c$l5">
+    <property role="1pbfSe" value="358001092" />
+    <property role="TrG5h" value="IRoutineToken" />
   </node>
 </model>
 

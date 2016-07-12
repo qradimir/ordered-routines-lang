@@ -96,11 +96,8 @@
     <ref role="1XX52x" to="y83k:5NejMmYd6Iu" resolve="Dependency" />
     <node concept="3EZMnI" id="5NejMmYdkmV" role="2wV5jI">
       <node concept="3F0ifn" id="5NejMmYdkn2" role="3EZMnx">
-        <property role="3F0ifm" value="dependency" />
+        <property role="3F0ifm" value="run in order" />
         <ref role="1k5W1q" to="tpen:hgVS8CF" resolve="KeyWord" />
-      </node>
-      <node concept="3F0A7n" id="2_Omw6NoZgU" role="3EZMnx">
-        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
       </node>
       <node concept="3F0ifn" id="5NejMmYdkn8" role="3EZMnx">
         <property role="3F0ifm" value="{" />
@@ -173,7 +170,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="2_Omw6NlH$_">
-    <ref role="1XX52x" to="y83k:2_Omw6NlBU9" resolve="StatementRoutine" />
+    <ref role="1XX52x" to="y83k:2_Omw6NlBU9" resolve="RoutineDeclaration" />
     <node concept="3EZMnI" id="2_Omw6NlHGy" role="2wV5jI">
       <node concept="3F0ifn" id="2_Omw6NlHK1" role="3EZMnx">
         <property role="3F0ifm" value="routine" />
@@ -223,6 +220,23 @@
         <ref role="1k5W1q" to="tpen:hFDgi_W" resolve="Semicolon" />
       </node>
       <node concept="l2Vlx" id="2_Omw6NpmIp" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="34$p7Z$co9W">
+    <ref role="1XX52x" to="y83k:34$p7Z$co9O" resolve="InlineRoutine" />
+    <node concept="3EZMnI" id="34$p7Z$co9Y" role="2wV5jI">
+      <node concept="3F0ifn" id="34$p7Z$coa5" role="3EZMnx">
+        <property role="3F0ifm" value="[" />
+        <ref role="1k5W1q" to="tpen:hXb$RYA" resolve="LeftBracket" />
+      </node>
+      <node concept="3F1sOY" id="34$p7Z$coab" role="3EZMnx">
+        <ref role="1NtTu8" to="y83k:34$p7Z$co9P" />
+      </node>
+      <node concept="3F0ifn" id="34$p7Z$coaj" role="3EZMnx">
+        <property role="3F0ifm" value="]" />
+        <ref role="1k5W1q" to="tpen:hXb$V4T" resolve="RightBracket" />
+      </node>
+      <node concept="l2Vlx" id="34$p7Z$coa1" role="2iSdaV" />
     </node>
   </node>
 </model>
