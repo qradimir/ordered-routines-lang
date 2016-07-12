@@ -10,11 +10,11 @@
     <use id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext" version="0" />
   </languages>
   <imports>
-    <import index="y83k" ref="r:433d48ef-df78-4c9d-85a8-21992e186e6b(dependencies.structure)" />
+    <import index="y83k" ref="r:433d48ef-df78-4c9d-85a8-21992e186e6b(jetbrains.mps.baseLanguage.orderedRoutines.structure)" />
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
     <import index="tpib" ref="r:00000000-0000-4000-0000-011c8959057f(jetbrains.mps.baseLanguage.logging.structure)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
-    <import index="jdhs" ref="r:faa7578a-a2c5-4fcf-a040-7141550b6614(dependencies.behavior)" implicit="true" />
+    <import index="jdhs" ref="r:faa7578a-a2c5-4fcf-a040-7141550b6614(jetbrains.mps.baseLanguage.orderedRoutines.behavior)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -661,7 +661,7 @@
                   </node>
                   <node concept="1mIQ4w" id="5cpSvt1pPDx" role="2OqNvi">
                     <node concept="chp4Y" id="5cpSvt1pPOh" role="cj9EA">
-                      <ref role="cht4Q" to="y83k:5NejMmYd6I_" resolve="DependencyDeclarartion" />
+                      <ref role="cht4Q" to="y83k:5NejMmYd6I_" resolve="OrderDeclaration" />
                     </node>
                   </node>
                 </node>
@@ -670,11 +670,11 @@
                     <node concept="3cpWsn" id="5cpSvt1pQ0_" role="3cpWs9">
                       <property role="TrG5h" value="dependencyDeclarartion" />
                       <node concept="3Tqbb2" id="5cpSvt1pQbG" role="1tU5fm">
-                        <ref role="ehGHo" to="y83k:5NejMmYd6I_" resolve="DependencyDeclarartion" />
+                        <ref role="ehGHo" to="y83k:5NejMmYd6I_" resolve="OrderDeclaration" />
                       </node>
                       <node concept="1PxgMI" id="5cpSvt1pT2j" role="33vP2m">
                         <property role="1BlNFB" value="true" />
-                        <ref role="1PxNhF" to="y83k:5NejMmYd6I_" resolve="DependencyDeclarartion" />
+                        <ref role="1PxNhF" to="y83k:5NejMmYd6I_" resolve="OrderDeclaration" />
                         <node concept="2GrUjf" id="5cpSvt1pSGY" role="1PxMeX">
                           <ref role="2Gs0qQ" node="5NejMmYesH6" resolve="dependencyNode" />
                         </node>
@@ -766,7 +766,7 @@
       <node concept="37vLTG" id="5NejMmYe9ag" role="3clF46">
         <property role="TrG5h" value="dependency" />
         <node concept="3Tqbb2" id="5NejMmYe9af" role="1tU5fm">
-          <ref role="ehGHo" to="y83k:5NejMmYd6Iu" resolve="Dependency" />
+          <ref role="ehGHo" to="y83k:5NejMmYd6Iu" resolve="RoutineBlockStatement" />
         </node>
       </node>
     </node>

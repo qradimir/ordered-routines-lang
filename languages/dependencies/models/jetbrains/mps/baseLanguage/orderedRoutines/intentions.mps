@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:93630ce3-7fac-4e3b-aa05-bfe26be0a38f(dependencies.intentions)">
+<model ref="r:93630ce3-7fac-4e3b-aa05-bfe26be0a38f(jetbrains.mps.baseLanguage.orderedRoutines.intentions)">
   <persistence version="9" />
   <languages>
     <use id="d7a92d38-f7db-40d0-8431-763b0c3c9f20" name="jetbrains.mps.lang.intentions" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
-    <import index="y83k" ref="r:433d48ef-df78-4c9d-85a8-21992e186e6b(dependencies.structure)" implicit="true" />
+    <import index="y83k" ref="r:433d48ef-df78-4c9d-85a8-21992e186e6b(jetbrains.mps.baseLanguage.orderedRoutines.structure)" implicit="true" />
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" implicit="true" />
   </imports>
   <registry>
@@ -88,7 +88,7 @@
   </registry>
   <node concept="2S6QgY" id="2_Omw6NptrB">
     <property role="TrG5h" value="addComentToDependencyDeclararionIntention" />
-    <ref role="2ZfgGC" to="y83k:5cpSvt1ps7N" resolve="DependencyNode" />
+    <ref role="2ZfgGC" to="y83k:5cpSvt1ps7N" resolve="RoutineBlockNode" />
     <node concept="2S6ZIM" id="2_Omw6NptrC" role="2ZfVej">
       <node concept="3clFbS" id="2_Omw6NptrD" role="2VODD2">
         <node concept="3clFbJ" id="5cpSvt1rh$h" role="3cqZAp">
@@ -103,7 +103,7 @@
             <node concept="2Sf5sV" id="5cpSvt1rhW0" role="2Oq$k0" />
             <node concept="1mIQ4w" id="5cpSvt1rimb" role="2OqNvi">
               <node concept="chp4Y" id="5cpSvt1ritc" role="cj9EA">
-                <ref role="cht4Q" to="y83k:5NejMmYd6I_" resolve="DependencyDeclarartion" />
+                <ref role="cht4Q" to="y83k:5NejMmYd6I_" resolve="OrderDeclaration" />
               </node>
             </node>
           </node>

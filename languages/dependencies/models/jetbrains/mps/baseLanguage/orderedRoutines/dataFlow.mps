@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:15b36924-fabd-4f82-976c-81173798eeee(dependencies.dataFlow)">
+<model ref="r:15b36924-fabd-4f82-976c-81173798eeee(jetbrains.mps.baseLanguage.orderedRoutines.dataFlow)">
   <persistence version="9" />
   <languages>
     <use id="7fa12e9c-b949-4976-b4fa-19accbc320b4" name="jetbrains.mps.lang.dataFlow" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
-    <import index="y83k" ref="r:433d48ef-df78-4c9d-85a8-21992e186e6b(dependencies.structure)" implicit="true" />
+    <import index="y83k" ref="r:433d48ef-df78-4c9d-85a8-21992e186e6b(jetbrains.mps.baseLanguage.orderedRoutines.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -77,7 +77,7 @@
     </language>
   </registry>
   <node concept="3_zdsH" id="5NejMmYdOQG">
-    <ref role="3_znuS" to="y83k:5NejMmYd6Iu" resolve="Dependency" />
+    <ref role="3_znuS" to="y83k:5NejMmYd6Iu" resolve="RoutineBlockStatement" />
     <node concept="3__wT9" id="5NejMmYdOQH" role="3_A6iZ">
       <node concept="3clFbS" id="5NejMmYdOQI" role="2VODD2">
         <node concept="3clFbF" id="5NejMmYdORo" role="3cqZAp">
@@ -109,7 +109,7 @@
     </node>
   </node>
   <node concept="3_zdsH" id="5NejMmYdR7e">
-    <ref role="3_znuS" to="y83k:5NejMmYd6I_" resolve="DependencyNode" />
+    <ref role="3_znuS" to="y83k:5NejMmYd6I_" resolve="OrderDeclaration" />
     <node concept="3__wT9" id="5NejMmYdR7f" role="3_A6iZ">
       <node concept="3clFbS" id="5NejMmYdR7g" role="2VODD2">
         <node concept="3AgYrR" id="5NejMmYdXwv" role="3cqZAp">

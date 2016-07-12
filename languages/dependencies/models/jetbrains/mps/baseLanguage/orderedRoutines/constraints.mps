@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:2a70299a-9204-4722-a042-c250016b9d6d(dependencies.constraints)">
+<model ref="r:2a70299a-9204-4722-a042-c250016b9d6d(jetbrains.mps.baseLanguage.orderedRoutines.constraints)">
   <persistence version="9" />
   <languages>
     <use id="3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1" name="jetbrains.mps.lang.constraints" version="0" />
@@ -8,7 +8,7 @@
   </languages>
   <imports>
     <import index="fnmy" ref="r:89c0fb70-0977-4113-a076-5906f9d8630f(jetbrains.mps.baseLanguage.scopes)" />
-    <import index="y83k" ref="r:433d48ef-df78-4c9d-85a8-21992e186e6b(dependencies.structure)" implicit="true" />
+    <import index="y83k" ref="r:433d48ef-df78-4c9d-85a8-21992e186e6b(jetbrains.mps.baseLanguage.orderedRoutines.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -61,7 +61,7 @@
     </node>
   </node>
   <node concept="1M2fIO" id="5cpSvt1puME">
-    <ref role="1M2myG" to="y83k:5cpSvt1ps7N" resolve="DependencyNode" />
+    <ref role="1M2myG" to="y83k:5cpSvt1ps7N" resolve="RoutineBlockNode" />
     <node concept="nKS2y" id="5cpSvt1puRJ" role="1MLUbF">
       <node concept="3clFbS" id="5cpSvt1puRK" role="2VODD2">
         <node concept="3clFbF" id="5NejMmYdjUR" role="3cqZAp">
@@ -69,7 +69,7 @@
             <node concept="nLn13" id="5NejMmYdkcD" role="2Oq$k0" />
             <node concept="1mIQ4w" id="5NejMmYdkiA" role="2OqNvi">
               <node concept="chp4Y" id="5NejMmYdkkG" role="cj9EA">
-                <ref role="cht4Q" to="y83k:5NejMmYd6Iu" resolve="Dependency" />
+                <ref role="cht4Q" to="y83k:5NejMmYd6Iu" resolve="RoutineBlockStatement" />
               </node>
             </node>
           </node>
