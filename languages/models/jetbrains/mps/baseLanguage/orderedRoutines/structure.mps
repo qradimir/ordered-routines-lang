@@ -19,7 +19,9 @@
         <property id="1587916991969465369" name="conceptId" index="1pbfSe" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
       </concept>
-      <concept id="1169125989551" name="jetbrains.mps.lang.structure.structure.InterfaceConceptDeclaration" flags="ig" index="PlHQZ" />
+      <concept id="1169125989551" name="jetbrains.mps.lang.structure.structure.InterfaceConceptDeclaration" flags="ig" index="PlHQZ">
+        <child id="1169127546356" name="extends" index="PrDN$" />
+      </concept>
       <concept id="1169127622168" name="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" flags="ig" index="PrWs8">
         <reference id="1169127628841" name="intfc" index="PrY4T" />
       </concept>
@@ -86,7 +88,7 @@
     <node concept="1TJgyj" id="2_Omw6NlHmF" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="expression" />
-      <property role="20lbJX" value="1" />
+      <property role="20lbJX" value="0..1" />
       <ref role="20lvS9" to="tpee:fz3vP1J" resolve="Expression" />
     </node>
     <node concept="PrWs8" id="34$p7Z$bcmz" role="PzmwI">
@@ -127,6 +129,9 @@
   <node concept="PlHQZ" id="34$p7Z$c$l5">
     <property role="1pbfSe" value="358001092" />
     <property role="TrG5h" value="IRoutineToken" />
+    <node concept="PrWs8" id="pZevM1O$q9" role="PrDN$">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
   </node>
   <node concept="1TIwiD" id="5cpSvt1ps7N">
     <property role="1pbfSe" value="1803574294" />
@@ -138,6 +143,14 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="comment" />
       <ref role="20lvS9" to="tpee:5vlcUuJ5uOU" resolve="SingleLineComment" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="pZevM1LFyl">
+    <property role="1pbfSe" value="2008681839" />
+    <property role="TrG5h" value="AbstractRoutineDeclaration" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="pZevM1LFym" role="PzmwI">
+      <ref role="PrY4T" to="tpee:4H$HgYMZ7sw" resolve="IVariableDeclaration" />
     </node>
   </node>
 </model>

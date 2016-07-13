@@ -4,6 +4,7 @@
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
     </modelRoot>
+    <modelRoot contentPath="C:/Users/Radimir.Sorokin/workspace/ordered-routines-lang/solutions" type="default" />
   </models>
   <sourcePath />
   <dependencies>

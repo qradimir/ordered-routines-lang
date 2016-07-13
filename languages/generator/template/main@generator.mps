@@ -4,17 +4,14 @@
   <languages>
     <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="0" />
     <use id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext" version="0" />
-    <use id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging" version="0" />
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="0" />
-    <use id="220ad2a3-988f-4331-9309-68a672761eba" name="dependencies" version="0" />
-    <use id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts" version="0" />
+    <use id="220ad2a3-988f-4331-9309-68a672761eba" name="jetbrains.mps.baseLanguage.orderedRoutines" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
     <import index="y83k" ref="r:433d48ef-df78-4c9d-85a8-21992e186e6b(jetbrains.mps.baseLanguage.orderedRoutines.structure)" />
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
-    <import index="lvip" ref="r:ac58c924-04ba-4431-999e-4099836e6a5d(dependencies.runtime)" />
-    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
+    <import index="lvip" ref="r:ac58c924-04ba-4431-999e-4099836e6a5d(jetbrains.mps.baseLanguage.orderedRoutines.runtime)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" implicit="true" />
     <import index="jdhs" ref="r:faa7578a-a2c5-4fcf-a040-7141550b6614(jetbrains.mps.baseLanguage.orderedRoutines.behavior)" implicit="true" />
@@ -88,9 +85,7 @@
       </concept>
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
-        <child id="1068499141038" name="actualArgument" index="37wK5m" />
       </concept>
-      <concept id="1212685548494" name="jetbrains.mps.baseLanguage.structure.ClassCreator" flags="nn" index="1pGfFk" />
       <concept id="1107461130800" name="jetbrains.mps.baseLanguage.structure.Classifier" flags="ng" index="3pOWGL">
         <child id="5375687026011219971" name="member" index="jymVt" unordered="true" />
       </concept>
@@ -212,17 +207,17 @@
                     <node concept="3cpWsn" id="2_Omw6NnABY" role="3cpWs9">
                       <property role="TrG5h" value="res" />
                       <node concept="3uibUv" id="2_Omw6NnABZ" role="1tU5fm">
-                        <ref role="3uigEE" to="lvip:2VTUfnTpSyy" resolve="GraphDependencyWalker.TopSortResult" />
+                        <ref role="3uigEE" to="lvip:2VTUfnTpSyy" resolve="RoutineBlockGraph.Result" />
                       </node>
                       <node concept="2OqwBi" id="2_Omw6NnAC0" role="33vP2m">
-                        <node concept="2ShNRf" id="2_Omw6NnAC1" role="2Oq$k0">
-                          <node concept="1pGfFk" id="2_Omw6NnAC2" role="2ShVmc">
-                            <ref role="37wK5l" to="lvip:5NejMmYe986" resolve="GraphDependencyWalker" />
-                            <node concept="30H73N" id="2_Omw6NnAC3" role="37wK5m" />
-                          </node>
-                        </node>
                         <node concept="liA8E" id="2_Omw6NnAC4" role="2OqNvi">
                           <ref role="37wK5l" to="lvip:5NejMmYey17" resolve="getTopSort" />
+                        </node>
+                        <node concept="2OqwBi" id="pZevM1OfUB" role="2Oq$k0">
+                          <node concept="30H73N" id="pZevM1OfJx" role="2Oq$k0" />
+                          <node concept="2qgKlT" id="pZevM1OgiX" role="2OqNvi">
+                            <ref role="37wK5l" to="jdhs:pZevM1OcGj" resolve="graph" />
+                          </node>
                         </node>
                       </node>
                     </node>

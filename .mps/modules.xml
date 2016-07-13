@@ -2,10 +2,9 @@
 <project version="4">
   <component name="MPSProject">
     <projectModules>
-      <modulePath path="$PROJECT_DIR$/languages/dependencies/dependencies.mpl" folder="" />
-      <modulePath path="$PROJECT_DIR$/languages/dependencies/jetbrains.mps.baseLanguage.orderedRoutines.mpl" folder="" />
-      <modulePath path="$PROJECT_DIR$/languages/dependencies/sandbox/sandbox.msd" folder="" />
-      <modulePath path="$PROJECT_DIR$/solutions/dependencies.runtime/jetbrains.mps.baseLanguage.orderedRoutines.runtime.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/jetbrains.mps.baseLanguage.orderedRoutines.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/sandbox/sandbox.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/jetbrains.mps.baseLanguage.orderedRoutines.runtime.msd" folder="" />
     </projectModules>
   </component>
 </project>
