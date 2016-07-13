@@ -44,11 +44,19 @@
       </concept>
       <concept id="1147467790433" name="jetbrains.mps.lang.constraints.structure.ConstraintFunction_PropertyGetter" flags="in" index="Eqf_E" />
       <concept id="1147468365020" name="jetbrains.mps.lang.constraints.structure.ConstraintsFunctionParameter_node" flags="nn" index="EsrRn" />
+      <concept id="8401916545537438642" name="jetbrains.mps.lang.constraints.structure.InheritedNodeScopeFactory" flags="ng" index="1dDu$B">
+        <reference id="8401916545537438643" name="kind" index="1dDu$A" />
+      </concept>
       <concept id="1152959968041" name="jetbrains.mps.lang.constraints.structure.ConstraintFunction_PropertySetter" flags="in" index="1LLf8_" />
       <concept id="1213093968558" name="jetbrains.mps.lang.constraints.structure.ConceptConstraints" flags="ng" index="1M2fIO">
         <reference id="1213093996982" name="concept" index="1M2myG" />
         <child id="1213098023997" name="property" index="1MhHOB" />
+        <child id="1213100494875" name="referent" index="1Mr941" />
         <child id="1213106463729" name="canBeChild" index="1MLUbF" />
+      </concept>
+      <concept id="1148687176410" name="jetbrains.mps.lang.constraints.structure.NodeReferentConstraint" flags="ng" index="1N5Pfh">
+        <reference id="1148687202698" name="applicableLink" index="1N5Vy1" />
+        <child id="1148687345559" name="searchScopeFactory" index="1N6uqs" />
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
@@ -79,6 +87,12 @@
   </registry>
   <node concept="1M2fIO" id="5cpSvt1o$pS">
     <ref role="1M2myG" to="y83k:2_Omw6Nn9eF" resolve="RoutineReference" />
+    <node concept="1N5Pfh" id="4CQTqFR7Q6n" role="1Mr941">
+      <ref role="1N5Vy1" to="y83k:2_Omw6Nn9Yp" />
+      <node concept="1dDu$B" id="4CQTqFR7Qbz" role="1N6uqs">
+        <ref role="1dDu$A" to="y83k:2_Omw6NlBU9" resolve="RoutineDeclaration" />
+      </node>
+    </node>
     <node concept="EnEH3" id="pZevM1OzPT" role="1MhHOB">
       <ref role="EomxK" to="tpck:h0TrG11" resolve="name" />
       <node concept="Eqf_E" id="pZevM1OzPV" role="EtsB7">
@@ -162,6 +176,21 @@
       <node concept="1LLf8_" id="pZevM1OBx9" role="1LXaQT">
         <node concept="3clFbS" id="pZevM1OBxa" role="2VODD2">
           <node concept="3clFbH" id="pZevM1OBxj" role="3cqZAp" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="4CQTqFR7RVF">
+    <ref role="1M2myG" to="y83k:2_Omw6NlBU9" resolve="RoutineDeclaration" />
+    <node concept="EnEH3" id="4CQTqFR7RVS" role="1MhHOB">
+      <ref role="EomxK" to="tpck:gOOYnlO" resolve="shortDescription" />
+      <node concept="Eqf_E" id="4CQTqFR7RVU" role="EtsB7">
+        <node concept="3clFbS" id="4CQTqFR7RVV" role="2VODD2">
+          <node concept="3clFbF" id="4CQTqFR7RX4" role="3cqZAp">
+            <node concept="Xl_RD" id="4CQTqFR7RX3" role="3clFbG">
+              <property role="Xl_RC" value="routine" />
+            </node>
+          </node>
         </node>
       </node>
     </node>
