@@ -51,6 +51,9 @@
         <reference id="1381004262292426837" name="parentStyleClass" index="1k5W1q" />
       </concept>
       <concept id="1088185857835" name="jetbrains.mps.lang.editor.structure.InlineEditorComponent" flags="ig" index="1sVBvm" />
+      <concept id="9122903797312246523" name="jetbrains.mps.lang.editor.structure.StyleReference" flags="ng" index="1wgc9g">
+        <reference id="9122903797312247166" name="style" index="1wgcnl" />
+      </concept>
       <concept id="1139848536355" name="jetbrains.mps.lang.editor.structure.CellModel_WithRole" flags="ng" index="1$h60E">
         <property id="1214560368769" name="emptyNoTargetText" index="39s7Ar" />
         <property id="1139852716018" name="noTargetText" index="1$x2rV" />
@@ -74,6 +77,9 @@
       </concept>
       <concept id="1073389882823" name="jetbrains.mps.lang.editor.structure.CellModel_RefNode" flags="sg" stub="730538219795960754" index="3F1sOY" />
       <concept id="1073390211982" name="jetbrains.mps.lang.editor.structure.CellModel_RefNodeList" flags="sg" stub="2794558372793454595" index="3F2HdR" />
+      <concept id="1950447826681509042" name="jetbrains.mps.lang.editor.structure.ApplyStyleClass" flags="lg" index="3Xmtl4">
+        <child id="1950447826683828796" name="target" index="3XvnJa" />
+      </concept>
       <concept id="1166049232041" name="jetbrains.mps.lang.editor.structure.AbstractComponent" flags="ng" index="1XWOmA">
         <reference id="1166049300910" name="conceptDeclaration" index="1XX52x" />
       </concept>
@@ -268,6 +274,11 @@
       <node concept="3F0ifn" id="34$p7Z$coa5" role="3EZMnx">
         <property role="3F0ifm" value="[" />
         <ref role="1k5W1q" to="tpen:hXb$RYA" resolve="LeftBracket" />
+        <node concept="3Xmtl4" id="A6MhpwFueQ" role="3F10Kt">
+          <node concept="1wgc9g" id="A6MhpwFueV" role="3XvnJa">
+            <ref role="1wgcnl" node="pZevM1QcMs" resolve="RoutineName" />
+          </node>
+        </node>
       </node>
       <node concept="3F1sOY" id="34$p7Z$coab" role="3EZMnx">
         <ref role="1NtTu8" to="y83k:34$p7Z$co9P" />
@@ -275,6 +286,11 @@
       <node concept="3F0ifn" id="34$p7Z$coaj" role="3EZMnx">
         <property role="3F0ifm" value="]" />
         <ref role="1k5W1q" to="tpen:hXb$V4T" resolve="RightBracket" />
+        <node concept="3Xmtl4" id="A6MhpwFuio" role="3F10Kt">
+          <node concept="1wgc9g" id="A6MhpwFuit" role="3XvnJa">
+            <ref role="1wgcnl" node="pZevM1QcMs" resolve="RoutineName" />
+          </node>
+        </node>
       </node>
       <node concept="l2Vlx" id="34$p7Z$coa1" role="2iSdaV" />
     </node>
