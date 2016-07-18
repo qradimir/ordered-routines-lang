@@ -212,5 +212,45 @@
     <property role="EcuMT" value="6815280930880510204" />
     <property role="TrG5h" value="IRoutineDeclaration" />
   </node>
+  <node concept="1TIwiD" id="3ftudi$C01P">
+    <property role="EcuMT" value="3737276120477728885" />
+    <property role="TrG5h" value="MethodCallOrderAttribute" />
+    <ref role="1TJDcQ" to="tpck:2ULFgo8_XDk" resolve="NodeAttribute" />
+    <node concept="1TJgyj" id="3ftudi$CSfL" role="1TKVEi">
+      <property role="IQ2ns" value="3737276120477959153" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="dependencies" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="3ftudi$CSge" resolve="MethodAttributeReference" />
+    </node>
+    <node concept="1TJgyj" id="3ftudi$DAMV" role="1TKVEi">
+      <property role="IQ2ns" value="3737276120478149819" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="reason" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="tpee:5vlcUuJ5uOU" resolve="SingleLineComment" />
+    </node>
+    <node concept="M6xJ_" id="3ftudi$C01Q" role="lGtFl">
+      <property role="Hh88m" value="order" />
+      <node concept="trNpa" id="3ftudi$DZa6" role="EQaZv">
+        <ref role="trN6q" to="tpee:fzclF7W" resolve="BaseMethodDeclaration" />
+      </node>
+    </node>
+    <node concept="PrWs8" id="3ftudi$D_fo" role="PzmwI">
+      <ref role="PrY4T" to="tpee:hCUYCKd" resolve="IValidIdentifier" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3ftudi$CSge">
+    <property role="EcuMT" value="3737276120477959182" />
+    <property role="TrG5h" value="MethodAttributeReference" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="3ftudi$CSgf" role="1TKVEi">
+      <property role="IQ2ns" value="3737276120477959183" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="method" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="tpee:fzclF7W" resolve="BaseMethodDeclaration" />
+    </node>
+  </node>
 </model>
 

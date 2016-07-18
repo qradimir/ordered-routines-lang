@@ -143,6 +143,13 @@
         <child id="3885805192183863296" name="expression" index="R$vWW" />
         <child id="7438973549059174400" name="dependencies" index="3E3BG7" />
       </concept>
+      <concept id="3737276120477728885" name="jetbrains.mps.baseLanguage.orderedRoutines.structure.MethodCallOrderAttribute" flags="ng" index="2nvnyx">
+        <child id="3737276120478149819" name="reason" index="2nuLhJ" />
+        <child id="3737276120477959153" name="dependencies" index="2nvJG_" />
+      </concept>
+      <concept id="3737276120477959182" name="jetbrains.mps.baseLanguage.orderedRoutines.structure.MethodAttributeReference" flags="ng" index="2nvJNq">
+        <reference id="3737276120477959183" name="method" index="2nvJNr" />
+      </concept>
       <concept id="2987111416204137387" name="jetbrains.mps.baseLanguage.orderedRoutines.structure.RoutineReference" flags="ng" index="2qacAE">
         <reference id="2987111416204140441" name="routine" index="2qacmo" />
       </concept>
@@ -195,8 +202,9 @@
       </node>
     </node>
     <node concept="2tJIrI" id="3ftudi$s60X" role="jymVt" />
+    <node concept="2tJIrI" id="3ftudi$DJEf" role="jymVt" />
     <node concept="2YIFZL" id="16_XGVs2JUT" role="jymVt">
-      <property role="TrG5h" value="nomain" />
+      <property role="TrG5h" value="nomasdain" />
       <property role="od$2w" value="false" />
       <property role="DiZV1" value="true" />
       <property role="2aFKle" value="false" />
@@ -356,6 +364,15 @@
       </node>
       <node concept="3Tm1VV" id="16_XGVs2JLZ" role="1B3o_S" />
       <node concept="3cqZAl" id="16_XGVs2JUm" role="3clF45" />
+      <node concept="2nvnyx" id="3ftudi$DJM9" role="lGtFl">
+        <node concept="3SKdUt" id="3ftudi$DJR2" role="2nuLhJ" />
+        <node concept="2nvJNq" id="3ftudi$DLEb" role="2nvJG_">
+          <ref role="2nvJNr" node="16_XGVrYZwa" resolve="main" />
+        </node>
+        <node concept="2nvJNq" id="3ftudi$DR6D" role="2nvJG_">
+          <ref role="2nvJNr" node="16_XGVrZpzf" resolve="createAndShowGUI" />
+        </node>
+      </node>
     </node>
     <node concept="2tJIrI" id="16_XGVrZKLK" role="jymVt" />
     <node concept="2YIFZL" id="16_XGVrYZwa" role="jymVt">
@@ -366,7 +383,7 @@
       <node concept="3clFbS" id="16_XGVrYZwc" role="3clF47">
         <node concept="3clFbF" id="5UkJunhBZtm" role="3cqZAp">
           <node concept="1rXfSq" id="5UkJunhBZtk" role="3clFbG">
-            <ref role="37wK5l" node="16_XGVs2JUT" resolve="nomain" />
+            <ref role="37wK5l" node="16_XGVs2JUT" resolve="nomasdain" />
           </node>
           <node concept="1747fG" id="5UkJunhFqyM" role="lGtFl">
             <property role="1747cx" value="true" />
