@@ -6,6 +6,7 @@
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
+    <import index="o8zo" ref="r:314576fc-3aee-4386-a0a5-a38348ac317d(jetbrains.mps.scope)" />
     <import index="y83k" ref="r:433d48ef-df78-4c9d-85a8-21992e186e6b(jetbrains.mps.baseLanguage.orderedRoutines.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="jdhs" ref="r:faa7578a-a2c5-4fcf-a040-7141550b6614(jetbrains.mps.baseLanguage.orderedRoutines.behavior)" implicit="true" />
@@ -128,16 +129,16 @@
           <node concept="3clFbF" id="4ygXq2rNqOG" role="3cqZAp">
             <node concept="2OqwBi" id="4ygXq2rNreg" role="3clFbG">
               <node concept="35c_gC" id="4ygXq2rNqOF" role="2Oq$k0">
-                <ref role="35c_gD" to="y83k:4oTHx629kO" resolve="StatementOrderAnnotation" />
+                <ref role="35c_gD" to="y83k:4oTHx629kO" resolve="StatementOrderAttribute" />
               </node>
               <node concept="2qgKlT" id="4ygXq2rNrzk" role="2OqNvi">
-                <ref role="37wK5l" to="jdhs:4ygXq2rN8BW" resolve="scopeOf" />
+                <ref role="37wK5l" to="jdhs:4ygXq2rLE$L" resolve="scopeOf" />
                 <node concept="2OqwBi" id="4ygXq2rNrRf" role="37wK5m">
                   <node concept="2rP1CM" id="4ygXq2rNrE7" role="2Oq$k0" />
                   <node concept="2Xjw5R" id="4ygXq2rNs40" role="2OqNvi">
                     <node concept="1xMEDy" id="4ygXq2rNs42" role="1xVPHs">
-                      <node concept="chp4Y" id="4ygXq2rNscq" role="ri$Ld">
-                        <ref role="cht4Q" to="tpee:fzclF80" resolve="StatementList" />
+                      <node concept="chp4Y" id="3ftudi$B3Ir" role="ri$Ld">
+                        <ref role="cht4Q" to="tpee:i2fhoOR" resolve="IMethodLike" />
                       </node>
                     </node>
                   </node>

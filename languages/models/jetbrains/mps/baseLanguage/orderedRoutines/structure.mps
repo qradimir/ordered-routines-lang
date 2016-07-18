@@ -161,7 +161,7 @@
   </node>
   <node concept="1TIwiD" id="4oTHx629kO">
     <property role="EcuMT" value="79066810041275700" />
-    <property role="TrG5h" value="StatementOrderAnnotation" />
+    <property role="TrG5h" value="StatementOrderAttribute" />
     <ref role="1TJDcQ" to="tpck:2ULFgo8_XDk" resolve="NodeAttribute" />
     <node concept="1TJgyj" id="4oTHx62aTn" role="1TKVEi">
       <property role="IQ2ns" value="79066810041282135" />
@@ -205,7 +205,7 @@
       <property role="20lbJX" value="1" />
       <property role="IQ2ns" value="79066810041275854" />
       <property role="20kJfa" value="annotation" />
-      <ref role="20lvS9" node="4oTHx629kO" resolve="StatementOrderAnnotation" />
+      <ref role="20lvS9" node="4oTHx629kO" resolve="StatementOrderAttribute" />
     </node>
   </node>
   <node concept="PlHQZ" id="5UkJunhC5zW">
