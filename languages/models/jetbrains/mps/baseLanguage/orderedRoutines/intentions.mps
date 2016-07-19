@@ -209,13 +209,8 @@
                         <node concept="1PxgMI" id="5UkJunhBbVk" role="37vLTx">
                           <ref role="1m5ApE" to="tpee:fz3vP1J" resolve="Expression" />
                           <node concept="2OqwBi" id="pZevM1KovI" role="1m5AlR">
-                            <node concept="2OqwBi" id="pZevM1ICrY" role="2Oq$k0">
-                              <node concept="37vLTw" id="pZevM1I_Y_" role="2Oq$k0">
-                                <ref role="3cqZAo" node="pZevM1Ir$k" resolve="it" />
-                              </node>
-                              <node concept="liA8E" id="4oTHx62gmn" role="2OqNvi">
-                                <ref role="37wK5l" to="lvip:5UkJunh_Wul" resolve="getRoutineNode" />
-                              </node>
+                            <node concept="37vLTw" id="pZevM1I_Y_" role="2Oq$k0">
+                              <ref role="3cqZAo" node="pZevM1Ir$k" resolve="it" />
                             </node>
                             <node concept="1$rogu" id="pZevM1Kp$E" role="2OqNvi" />
                           </node>

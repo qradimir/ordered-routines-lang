@@ -239,6 +239,9 @@
     <node concept="PrWs8" id="3ftudi$D_fo" role="PzmwI">
       <ref role="PrY4T" to="tpee:hCUYCKd" resolve="IValidIdentifier" />
     </node>
+    <node concept="PrWs8" id="7irQlPpJhYI" role="PzmwI">
+      <ref role="PrY4T" node="5UkJunhC5zW" resolve="IRoutineDeclaration" />
+    </node>
   </node>
   <node concept="1TIwiD" id="3ftudi$CSge">
     <property role="EcuMT" value="3737276120477959182" />
@@ -247,9 +250,9 @@
     <node concept="1TJgyj" id="3ftudi$CSgf" role="1TKVEi">
       <property role="IQ2ns" value="3737276120477959183" />
       <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="method" />
+      <property role="20kJfa" value="attribute" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" to="tpee:fzclF7W" resolve="BaseMethodDeclaration" />
+      <ref role="20lvS9" node="3ftudi$C01P" resolve="MethodCallOrderAttribute" />
     </node>
   </node>
 </model>

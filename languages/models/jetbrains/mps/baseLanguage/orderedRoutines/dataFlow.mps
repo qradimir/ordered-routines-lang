@@ -214,7 +214,6 @@
         <reference id="6733348108486823428" name="concept" index="1m5ApE" />
         <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
       </concept>
-      <concept id="1139613262185" name="jetbrains.mps.lang.smodel.structure.Node_GetParentOperation" flags="nn" index="1mfA1w" />
       <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
         <child id="1177027386292" name="conceptArgument" index="cj9EA" />
       </concept>
@@ -237,18 +236,8 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
-      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
-        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
-      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
-      </concept>
-      <concept id="709746936026466394" name="jetbrains.mps.lang.core.structure.ChildAttribute" flags="ng" index="3VBwX9">
-        <property id="709746936026609031" name="linkId" index="3V$3ak" />
-        <property id="709746936026609029" name="linkRole" index="3V$3am" />
-      </concept>
-      <concept id="4452961908202556907" name="jetbrains.mps.lang.core.structure.BaseCommentAttribute" flags="ng" index="1X3_iC">
-        <child id="3078666699043039389" name="commentedNode" index="8Wnug" />
       </concept>
     </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
@@ -487,7 +476,7 @@
       <node concept="3clFbS" id="5UkJunhOrt1" role="2VODD2">
         <node concept="3cpWs8" id="3ftudi$FFoi" role="3cqZAp">
           <node concept="3cpWsn" id="3ftudi$FFoj" role="3cpWs9">
-            <property role="TrG5h" value="state" />
+            <property role="TrG5h" value="analyzerState" />
             <node concept="3uibUv" id="3ftudi$FFok" role="1tU5fm">
               <ref role="3uigEE" node="3ftudi$EJf8" resolve="AnalyzerState" />
             </node>
@@ -551,20 +540,17 @@
                       <node concept="2OqwBi" id="3ftudi$FRER" role="3clFbG">
                         <node concept="2OqwBi" id="3ftudi$FPYu" role="2Oq$k0">
                           <node concept="37vLTw" id="3ftudi$FP_E" role="2Oq$k0">
-                            <ref role="3cqZAo" node="3ftudi$FFoj" resolve="state" />
+                            <ref role="3cqZAo" node="3ftudi$FFoj" resolve="analyzerState" />
                           </node>
                           <node concept="2OwXpG" id="3ftudi$FQvk" role="2OqNvi">
                             <ref role="2Oxat5" node="3ftudi$EJhq" resolve="executedStatemnets" />
                           </node>
                         </node>
                         <node concept="TSZUe" id="3ftudi$FTSn" role="2OqNvi">
-                          <node concept="1PxgMI" id="3ftudi$Gg_d" role="25WWJ7">
-                            <ref role="1m5ApE" to="tpee:fzclF8l" resolve="Statement" />
-                            <node concept="2OqwBi" id="3ftudi$G2CM" role="1m5AlR">
-                              <node concept="37vLTw" id="3ftudi$FUnW" role="2Oq$k0">
-                                <ref role="3cqZAo" node="3ftudi$FIn_" resolve="orderAttribute" />
-                              </node>
-                              <node concept="1mfA1w" id="3ftudi$G3Jh" role="2OqNvi" />
+                          <node concept="1PxgMI" id="7irQlPpJa5d" role="25WWJ7">
+                            <ref role="1m5ApE" to="y83k:4oTHx629kO" resolve="StatementOrderAttribute" />
+                            <node concept="37vLTw" id="3ftudi$FUnW" role="1m5AlR">
+                              <ref role="3cqZAo" node="3ftudi$FIn_" resolve="orderAttribute" />
                             </node>
                           </node>
                         </node>
@@ -597,20 +583,17 @@
                         <node concept="2OqwBi" id="3ftudi$GkDJ" role="3clFbG">
                           <node concept="2OqwBi" id="3ftudi$Gi84" role="2Oq$k0">
                             <node concept="37vLTw" id="3ftudi$GhzM" role="2Oq$k0">
-                              <ref role="3cqZAo" node="3ftudi$FFoj" resolve="state" />
+                              <ref role="3cqZAo" node="3ftudi$FFoj" resolve="analyzerState" />
                             </node>
                             <node concept="2OwXpG" id="3ftudi$GjcM" role="2OqNvi">
                               <ref role="2Oxat5" node="3ftudi$EJin" resolve="calledMethods" />
                             </node>
                           </node>
                           <node concept="TSZUe" id="3ftudi$GnvN" role="2OqNvi">
-                            <node concept="1PxgMI" id="3ftudi$GtrF" role="25WWJ7">
-                              <ref role="1m5ApE" to="tpee:fzclF7W" resolve="BaseMethodDeclaration" />
-                              <node concept="2OqwBi" id="3ftudi$GpMN" role="1m5AlR">
-                                <node concept="37vLTw" id="3ftudi$GoAr" role="2Oq$k0">
-                                  <ref role="3cqZAo" node="3ftudi$FIn_" resolve="orderAttribute" />
-                                </node>
-                                <node concept="1mfA1w" id="3ftudi$GqXo" role="2OqNvi" />
+                            <node concept="1PxgMI" id="7irQlPpJfTc" role="25WWJ7">
+                              <ref role="1m5ApE" to="y83k:3ftudi$C01P" resolve="MethodCallOrderAttribute" />
+                              <node concept="37vLTw" id="3ftudi$GoAr" role="1m5AlR">
+                                <ref role="3cqZAo" node="3ftudi$FIn_" resolve="orderAttribute" />
                               </node>
                             </node>
                           </node>
@@ -619,17 +602,16 @@
                     </node>
                   </node>
                 </node>
-                <node concept="1X3_iC" id="3ftudi$FYSK" role="lGtFl">
-                  <property role="3V$3am" value="statement" />
-                  <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-                  <node concept="3clFbF" id="3ftudi$z68w" role="8Wnug">
-                    <node concept="2OqwBi" id="3ftudi$z726" role="3clFbG">
-                      <node concept="3fFAME" id="3ftudi$z68u" role="2Oq$k0">
-                        <ref role="1M0zk5" node="3ftudi$shXq" resolve="graph" />
-                      </node>
-                      <node concept="liA8E" id="3ftudi$z7OQ" role="2OqNvi">
-                        <ref role="37wK5l" to="lvip:5UkJunhOTQ6" resolve="add" />
-                        <node concept="37vLTw" id="3ftudi$FYm8" role="37wK5m">
+                <node concept="3clFbF" id="3ftudi$z68w" role="3cqZAp">
+                  <node concept="2OqwBi" id="3ftudi$z726" role="3clFbG">
+                    <node concept="3fFAME" id="3ftudi$z68u" role="2Oq$k0">
+                      <ref role="1M0zk5" node="3ftudi$shXq" resolve="graph" />
+                    </node>
+                    <node concept="liA8E" id="3ftudi$z7OQ" role="2OqNvi">
+                      <ref role="37wK5l" to="lvip:5UkJunhOTQ6" resolve="add" />
+                      <node concept="1PxgMI" id="7irQlPpKCNU" role="37wK5m">
+                        <ref role="1m5ApE" to="y83k:5UkJunhC5zW" resolve="IRoutineDeclaration" />
+                        <node concept="37vLTw" id="3ftudi$FYm8" role="1m5AlR">
                           <ref role="3cqZAo" node="3ftudi$FIn_" resolve="orderAttribute" />
                         </node>
                       </node>
@@ -656,7 +638,7 @@
         </node>
         <node concept="3clFbF" id="3ftudi$nBx4" role="3cqZAp">
           <node concept="37vLTw" id="3ftudi$Gv_G" role="3clFbG">
-            <ref role="3cqZAo" node="3ftudi$FFoj" resolve="state" />
+            <ref role="3cqZAo" node="3ftudi$FFoj" resolve="analyzerState" />
           </node>
         </node>
       </node>
@@ -787,13 +769,13 @@
       <node concept="3Tm1VV" id="3ftudi$EJgx" role="1B3o_S" />
       <node concept="2hMVRd" id="3ftudi$EJhb" role="1tU5fm">
         <node concept="3Tqbb2" id="3ftudi$EJhk" role="2hN53Y">
-          <ref role="ehGHo" to="tpee:fzclF8l" resolve="Statement" />
+          <ref role="ehGHo" to="y83k:4oTHx629kO" resolve="StatementOrderAttribute" />
         </node>
       </node>
       <node concept="2ShNRf" id="3ftudi$EQxS" role="33vP2m">
         <node concept="2i4dXS" id="3ftudi$EQxN" role="2ShVmc">
           <node concept="3Tqbb2" id="3ftudi$EQxO" role="HW$YZ">
-            <ref role="ehGHo" to="tpee:fzclF8l" resolve="Statement" />
+            <ref role="ehGHo" to="y83k:4oTHx629kO" resolve="StatementOrderAttribute" />
           </node>
         </node>
       </node>
@@ -806,13 +788,13 @@
       <node concept="3Tm1VV" id="3ftudi$EJhR" role="1B3o_S" />
       <node concept="2hMVRd" id="3ftudi$EJib" role="1tU5fm">
         <node concept="3Tqbb2" id="3ftudi$EJik" role="2hN53Y">
-          <ref role="ehGHo" to="tpee:fzclF7W" resolve="BaseMethodDeclaration" />
+          <ref role="ehGHo" to="y83k:3ftudi$C01P" resolve="MethodCallOrderAttribute" />
         </node>
       </node>
       <node concept="2ShNRf" id="3ftudi$EQzs" role="33vP2m">
         <node concept="2i4dXS" id="3ftudi$EQzn" role="2ShVmc">
           <node concept="3Tqbb2" id="3ftudi$EQzo" role="HW$YZ">
-            <ref role="ehGHo" to="tpee:fzclF7W" resolve="BaseMethodDeclaration" />
+            <ref role="ehGHo" to="y83k:3ftudi$C01P" resolve="MethodCallOrderAttribute" />
           </node>
         </node>
       </node>
