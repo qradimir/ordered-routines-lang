@@ -326,14 +326,14 @@
     </node>
   </node>
   <node concept="2S6QgY" id="4oTHx631Qq">
-    <property role="TrG5h" value="addOrderAnnotationToAll" />
+    <property role="TrG5h" value="addOrderAttributeToAll" />
     <property role="2ZfUl0" value="true" />
     <ref role="2ZfgGC" to="tpee:i2fhoOR" resolve="IMethodLike" />
     <node concept="2S6ZIM" id="4oTHx631Qr" role="2ZfVej">
       <node concept="3clFbS" id="4oTHx631Qs" role="2VODD2">
         <node concept="3clFbF" id="4oTHx6352S" role="3cqZAp">
           <node concept="Xl_RD" id="4oTHx6352R" role="3clFbG">
-            <property role="Xl_RC" value="Add Order Annotation to All" />
+            <property role="Xl_RC" value="Add Order Attribute to All" />
           </node>
         </node>
       </node>
@@ -433,6 +433,28 @@
                       </node>
                     </node>
                   </node>
+                  <node concept="3clFbF" id="5$N7Cz7ozHa" role="3cqZAp">
+                    <node concept="37vLTI" id="5$N7Cz7oBRw" role="3clFbG">
+                      <node concept="3clFbT" id="5$N7Cz7oC60" role="37vLTx">
+                        <property role="3clFbU" value="true" />
+                      </node>
+                      <node concept="2OqwBi" id="5$N7Cz7o$U2" role="37vLTJ">
+                        <node concept="2OqwBi" id="5$N7Cz7ozTk" role="2Oq$k0">
+                          <node concept="37vLTw" id="5$N7Cz7ozH8" role="2Oq$k0">
+                            <ref role="3cqZAo" node="3ftudi$$u3B" resolve="it" />
+                          </node>
+                          <node concept="3CFZ6_" id="5$N7Cz7o$gz" role="2OqNvi">
+                            <node concept="3CFYIy" id="5$N7Cz7o$uE" role="3CFYIz">
+                              <ref role="3CFYIx" to="y83k:4oTHx629kO" resolve="StatementOrderAttribute" />
+                            </node>
+                          </node>
+                        </node>
+                        <node concept="3TrcHB" id="5$N7Cz7o_n8" role="2OqNvi">
+                          <ref role="3TsBF5" to="y83k:4oTHx629nT" resolve="visible" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
                 </node>
                 <node concept="Rh6nW" id="3ftudi$$u3B" role="1bW2Oz">
                   <property role="TrG5h" value="it" />
@@ -446,14 +468,14 @@
     </node>
   </node>
   <node concept="2S6QgY" id="4oTHx63in0">
-    <property role="TrG5h" value="showAllOrderAnnotation" />
+    <property role="TrG5h" value="showAllOrderAttributes" />
     <property role="2ZfUl0" value="true" />
     <ref role="2ZfgGC" to="tpee:i2fhoOR" resolve="IMethodLike" />
     <node concept="2S6ZIM" id="4oTHx63in1" role="2ZfVej">
       <node concept="3clFbS" id="4oTHx63in2" role="2VODD2">
         <node concept="3clFbF" id="4oTHx63k6u" role="3cqZAp">
           <node concept="Xl_RD" id="4oTHx63k6t" role="3clFbG">
-            <property role="Xl_RC" value="Show All Order Annotation" />
+            <property role="Xl_RC" value="Show All Order Attributes" />
           </node>
         </node>
       </node>
@@ -533,14 +555,14 @@
     </node>
   </node>
   <node concept="2S6QgY" id="4oTHx64$FK">
-    <property role="TrG5h" value="removeAllOrderAnnotation" />
+    <property role="TrG5h" value="removeAllOrderAttributes" />
     <property role="2ZfUl0" value="true" />
     <ref role="2ZfgGC" to="tpee:i2fhoOR" resolve="IMethodLike" />
     <node concept="2S6ZIM" id="4oTHx64$FL" role="2ZfVej">
       <node concept="3clFbS" id="4oTHx64$FM" role="2VODD2">
         <node concept="3clFbF" id="4oTHx64_1A" role="3cqZAp">
           <node concept="Xl_RD" id="4oTHx64_1_" role="3clFbG">
-            <property role="Xl_RC" value="Remove All Order Annotatoon" />
+            <property role="Xl_RC" value="Remove All Order Attributes" />
           </node>
         </node>
       </node>
@@ -647,14 +669,14 @@
     </node>
   </node>
   <node concept="2S6QgY" id="16_XGVrRzGd">
-    <property role="TrG5h" value="hideAllOrderAnnotattion" />
+    <property role="TrG5h" value="hideAllOrderAttributes" />
     <property role="2ZfUl0" value="true" />
     <ref role="2ZfgGC" to="tpee:i2fhoOR" resolve="IMethodLike" />
     <node concept="2S6ZIM" id="16_XGVrRzGe" role="2ZfVej">
       <node concept="3clFbS" id="16_XGVrRzGf" role="2VODD2">
         <node concept="3clFbF" id="16_XGVrRzQz" role="3cqZAp">
           <node concept="Xl_RD" id="16_XGVrRzQy" role="3clFbG">
-            <property role="Xl_RC" value="Hide All Order Annotation" />
+            <property role="Xl_RC" value="Hide All Order Attributes" />
           </node>
         </node>
       </node>
