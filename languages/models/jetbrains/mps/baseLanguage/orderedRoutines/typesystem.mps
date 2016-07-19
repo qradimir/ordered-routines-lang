@@ -763,17 +763,23 @@
                             </node>
                             <node concept="3cpWs3" id="5NL1O9CCGRj" role="2MkJ7o">
                               <node concept="Xl_RD" id="5NL1O9CCGRk" role="3uHU7w">
-                                <property role="Xl_RC" value="' should be called before" />
+                                <property role="Xl_RC" value="' should be called after" />
                               </node>
                               <node concept="3cpWs3" id="5NL1O9CCGRl" role="3uHU7B">
                                 <node concept="Xl_RD" id="5NL1O9CCGRm" role="3uHU7B">
                                   <property role="Xl_RC" value="Method '" />
                                 </node>
-                                <node concept="2OqwBi" id="5NL1O9CCGRn" role="3uHU7w">
-                                  <node concept="37vLTw" id="5NL1O9CCGRo" role="2Oq$k0">
-                                    <ref role="3cqZAo" node="5NL1O9CCGQF" resolve="attribute" />
+                                <node concept="2OqwBi" id="dMC9QYxpi6" role="3uHU7w">
+                                  <node concept="1PxgMI" id="dMC9QYxooS" role="2Oq$k0">
+                                    <ref role="1m5ApE" to="tpee:fzclF7W" resolve="BaseMethodDeclaration" />
+                                    <node concept="2OqwBi" id="dMC9QYxge1" role="1m5AlR">
+                                      <node concept="2GrUjf" id="dMC9QYxfZt" role="2Oq$k0">
+                                        <ref role="2Gs0qQ" node="5NL1O9CCGQZ" resolve="called" />
+                                      </node>
+                                      <node concept="1mfA1w" id="dMC9QYxgH9" role="2OqNvi" />
+                                    </node>
                                   </node>
-                                  <node concept="3TrcHB" id="5NL1O9CCGRp" role="2OqNvi">
+                                  <node concept="3TrcHB" id="dMC9QYxq3l" role="2OqNvi">
                                     <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
                                   </node>
                                 </node>

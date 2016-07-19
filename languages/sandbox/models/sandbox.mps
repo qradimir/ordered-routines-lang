@@ -138,6 +138,13 @@
       <concept id="2987111416204137387" name="jetbrains.mps.baseLanguage.orderedRoutines.structure.RoutineReference" flags="ng" index="2qacAE">
         <reference id="2987111416204140441" name="routine" index="2qacmo" />
       </concept>
+      <concept id="79066810041275853" name="jetbrains.mps.baseLanguage.orderedRoutines.structure.StatementOrderReference" flags="ng" index="1747cl">
+        <reference id="79066810041275854" name="attribute" index="1747cm" />
+      </concept>
+      <concept id="79066810041275700" name="jetbrains.mps.baseLanguage.orderedRoutines.structure.StatementOrderAttribute" flags="ng" index="1747fG">
+        <property id="79066810041275897" name="visible" index="1747cx" />
+        <child id="79066810041282135" name="dependencies" index="1744yf" />
+      </concept>
       <concept id="6687369520215255966" name="jetbrains.mps.baseLanguage.orderedRoutines.structure.RoutineBlockStatement" flags="ng" index="3yYyiV">
         <child id="6687369520215255971" name="routines" index="3yYyi6" />
       </concept>
@@ -1100,10 +1107,21 @@
           <node concept="1rXfSq" id="dMC9QYsjCr" role="3clFbG">
             <ref role="37wK5l" node="dMC9QYrfd8" resolve="f1" />
           </node>
+          <node concept="1747fG" id="dMC9QYxdPM" role="lGtFl">
+            <property role="1747cx" value="true" />
+            <property role="TrG5h" value="asd1" />
+            <node concept="1747cl" id="dMC9QYxdTa" role="1744yf">
+              <ref role="1747cm" node="dMC9QYxc5c" resolve="asd2" />
+            </node>
+          </node>
         </node>
         <node concept="3clFbF" id="dMC9QYsjJW" role="3cqZAp">
           <node concept="1rXfSq" id="dMC9QYsjJU" role="3clFbG">
             <ref role="37wK5l" node="dMC9QYrfsX" resolve="f2" />
+          </node>
+          <node concept="1747fG" id="dMC9QYxc5c" role="lGtFl">
+            <property role="1747cx" value="true" />
+            <property role="TrG5h" value="asd2" />
           </node>
         </node>
       </node>
