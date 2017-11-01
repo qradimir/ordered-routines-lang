@@ -15,6 +15,7 @@
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="jdhs" ref="r:faa7578a-a2c5-4fcf-a040-7141550b6614(jetbrains.mps.baseLanguage.orderedRoutines.behavior)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -1752,12 +1753,17 @@
           </node>
         </node>
         <node concept="3cpWs6" id="7irQlPpJPe5" role="3cqZAp">
-          <node concept="2OqwBi" id="7irQlPpJPoI" role="3cqZAk">
-            <node concept="37vLTw" id="7irQlPpJPjx" role="2Oq$k0">
-              <ref role="3cqZAo" node="7irQlPpJOym" resolve="node" />
+          <node concept="2OqwBi" id="4T8J1SQOzri" role="3cqZAk">
+            <node concept="1PxgMI" id="4T8J1SQOyx1" role="2Oq$k0">
+              <node concept="chp4Y" id="4T8J1SQOySc" role="3oSUPX">
+                <ref role="cht4Q" to="tpce:f_TIwhg" resolve="ConceptDeclaration" />
+              </node>
+              <node concept="37vLTw" id="7irQlPpJPjx" role="1m5AlR">
+                <ref role="3cqZAo" node="7irQlPpJOym" resolve="node" />
+              </node>
             </node>
-            <node concept="3TrcHB" id="7irQlPpJPzZ" role="2OqNvi">
-              <ref role="3TsBF5" to="tpck:gOOYy9I" resolve="alias" />
+            <node concept="3TrcHB" id="4T8J1SQO$gi" role="2OqNvi">
+              <ref role="3TsBF5" to="tpce:4qF2Hm2r7ja" resolve="conceptAlias" />
             </node>
           </node>
         </node>
