@@ -144,6 +144,9 @@
     <node concept="PrWs8" id="5UkJunhC8lo" role="PzmwI">
       <ref role="PrY4T" node="5UkJunhC5zW" resolve="IRoutineDeclaration" />
     </node>
+    <node concept="PrWs8" id="6XDRZMPpvRq" role="PzmwI">
+      <ref role="PrY4T" to="tpck:69Qfsw3InJo" resolve="ISmartReferent" />
+    </node>
   </node>
   <node concept="1TIwiD" id="7dIFls3Rl2T">
     <property role="EcuMT" value="8317776151038480569" />
@@ -154,9 +157,6 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="comment" />
       <ref role="20lvS9" to="tpee:5vlcUuJ5uOU" resolve="SingleLineComment" />
-    </node>
-    <node concept="PrWs8" id="7dIFls3Rlvv" role="PzmwI">
-      <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
     </node>
   </node>
   <node concept="1TIwiD" id="4oTHx629kO">

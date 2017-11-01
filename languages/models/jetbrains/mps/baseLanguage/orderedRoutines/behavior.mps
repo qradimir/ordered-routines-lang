@@ -58,6 +58,9 @@
       <concept id="1137021947720" name="jetbrains.mps.baseLanguage.structure.ConceptFunction" flags="in" index="2VMwT0">
         <child id="1137022507850" name="body" index="2VODD2" />
       </concept>
+      <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
+        <property id="1070475926801" name="value" index="Xl_RC" />
+      </concept>
       <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
         <reference id="1144433194310" name="classConcept" index="1Pybhc" />
       </concept>
@@ -71,6 +74,7 @@
       </concept>
       <concept id="1068498886292" name="jetbrains.mps.baseLanguage.structure.ParameterDeclaration" flags="ir" index="37vLTG" />
       <concept id="1068498886294" name="jetbrains.mps.baseLanguage.structure.AssignmentExpression" flags="nn" index="37vLTI" />
+      <concept id="1225271177708" name="jetbrains.mps.baseLanguage.structure.StringType" flags="in" index="17QB3L" />
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
         <child id="5680397130376446158" name="type" index="1tU5fm" />
       </concept>
@@ -567,6 +571,25 @@
     </node>
     <node concept="13hLZK" id="hr5pouRyCV" role="13h7CW">
       <node concept="3clFbS" id="hr5pouRyCW" role="2VODD2" />
+    </node>
+    <node concept="13i0hz" id="6XDRZMPpvRV" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="false" />
+      <property role="TrG5h" value="getDescriptionText" />
+      <ref role="13i0hy" to="tpcu:69Qfsw3IqwE" resolve="getDescriptionText" />
+      <node concept="3Tm1VV" id="6XDRZMPpvRW" role="1B3o_S" />
+      <node concept="3clFbS" id="6XDRZMPpvS3" role="3clF47">
+        <node concept="3cpWs6" id="6XDRZMPpwJ9" role="3cqZAp">
+          <node concept="Xl_RD" id="4CQTqFR7RX3" role="3cqZAk">
+            <property role="Xl_RC" value="routine" />
+          </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="6XDRZMPpvS4" role="3clF46">
+        <property role="TrG5h" value="reference" />
+        <node concept="3Tqbb2" id="6XDRZMPpvS5" role="1tU5fm" />
+      </node>
+      <node concept="17QB3L" id="6XDRZMPpvS6" role="3clF45" />
     </node>
   </node>
   <node concept="13h7C7" id="4oTHx63Maj">

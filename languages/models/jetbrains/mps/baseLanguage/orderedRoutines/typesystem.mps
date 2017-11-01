@@ -156,6 +156,9 @@
         <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
         <child id="3906496115198199033" name="conceptArgument" index="3oSUPX" />
       </concept>
+      <concept id="2644386474300074836" name="jetbrains.mps.lang.smodel.structure.ConceptIdRefExpression" flags="nn" index="35c_gC">
+        <reference id="2644386474300074837" name="conceptDeclaration" index="35c_gD" />
+      </concept>
       <concept id="1139613262185" name="jetbrains.mps.lang.smodel.structure.Node_GetParentOperation" flags="nn" index="1mfA1w" />
       <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
         <child id="1177027386292" name="conceptArgument" index="cj9EA" />
@@ -172,9 +175,6 @@
       </concept>
       <concept id="1138056282393" name="jetbrains.mps.lang.smodel.structure.SLinkListAccess" flags="nn" index="3Tsc0h">
         <reference id="1138056546658" name="link" index="3TtcxE" />
-      </concept>
-      <concept id="1172424058054" name="jetbrains.mps.lang.smodel.structure.ConceptRefExpression" flags="nn" index="3TUQnm">
-        <reference id="1172424100906" name="conceptDeclaration" index="3TV0OU" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -307,14 +307,14 @@
             <ref role="3uigEE" to="o8zo:3fifI_xCtN$" resolve="Scope" />
           </node>
           <node concept="2YIFZM" id="4oTHx60xYa" role="33vP2m">
-            <ref role="37wK5l" to="o8zo:3fifI_xCtPu" resolve="getScope" />
             <ref role="1Pybhc" to="o8zo:3fifI_xCtN$" resolve="Scope" />
+            <ref role="37wK5l" to="o8zo:52_Geb4SiYg" resolve="getScope" />
             <node concept="1YBJjd" id="4oTHx60C4P" role="37wK5m">
               <ref role="1YBMHb" node="4oTHx60Bbe" resolve="routineDeclaration" />
             </node>
             <node concept="10Nm6u" id="4oTHx60zet" role="37wK5m" />
-            <node concept="3TUQnm" id="4oTHx60zC7" role="37wK5m">
-              <ref role="3TV0OU" to="y83k:5cpSvt1ps7N" resolve="RoutineDeclaration" />
+            <node concept="35c_gC" id="6XDRZMPqJoV" role="37wK5m">
+              <ref role="35c_gD" to="y83k:5cpSvt1ps7N" resolve="RoutineDeclaration" />
             </node>
           </node>
         </node>
