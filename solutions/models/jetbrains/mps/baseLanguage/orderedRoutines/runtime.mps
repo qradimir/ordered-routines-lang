@@ -7,7 +7,7 @@
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="1" />
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="13" />
     <use id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging" version="0" />
-    <use id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext" version="0" />
+    <use id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext" version="1" />
   </languages>
   <imports>
     <import index="y83k" ref="r:433d48ef-df78-4c9d-85a8-21992e186e6b(jetbrains.mps.baseLanguage.orderedRoutines.structure)" />
@@ -404,7 +404,7 @@
                 <node concept="2OqwBi" id="5NejMmYectl" role="3uHU7B">
                   <node concept="Xjq3P" id="5NejMmYectm" role="2Oq$k0" />
                   <node concept="liA8E" id="5NejMmYectn" role="2OqNvi">
-                    <ref role="37wK5l" to="wyt6:~Object.getClass():java.lang.Class" resolve="getClass" />
+                    <ref role="37wK5l" to="wyt6:~Object.getClass()" resolve="getClass" />
                   </node>
                 </node>
                 <node concept="2OqwBi" id="5NejMmYecto" role="3uHU7w">
@@ -412,7 +412,7 @@
                     <ref role="3cqZAo" node="5NejMmYecty" resolve="o" />
                   </node>
                   <node concept="liA8E" id="5NejMmYectq" role="2OqNvi">
-                    <ref role="37wK5l" to="wyt6:~Object.getClass():java.lang.Class" resolve="getClass" />
+                    <ref role="37wK5l" to="wyt6:~Object.getClass()" resolve="getClass" />
                   </node>
                 </node>
               </node>
@@ -476,7 +476,7 @@
                 </node>
               </node>
               <node concept="liA8E" id="2lIkNd6wZGB" role="2OqNvi">
-                <ref role="37wK5l" to="wyt6:~Object.hashCode():int" resolve="hashCode" />
+                <ref role="37wK5l" to="wyt6:~Object.hashCode()" resolve="hashCode" />
               </node>
             </node>
           </node>

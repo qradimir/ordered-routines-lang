@@ -485,7 +485,7 @@
             <node concept="2OqwBi" id="5UkJunhQ$XT" role="33vP2m">
               <node concept="1fK8h6" id="5UkJunhQ$PF" role="2Oq$k0" />
               <node concept="liA8E" id="5UkJunhQ_hR" role="2OqNvi">
-                <ref role="37wK5l" to="1fjm:~ProgramState.getInstruction():jetbrains.mps.lang.dataFlow.framework.instructions.Instruction" resolve="getInstruction" />
+                <ref role="37wK5l" to="1fjm:~ProgramState.getInstruction()" resolve="getInstruction" />
               </node>
             </node>
           </node>
