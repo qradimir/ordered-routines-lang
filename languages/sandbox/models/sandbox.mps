@@ -456,9 +456,9 @@
             </node>
             <node concept="liA8E" id="16_XGVrZp$F" role="2OqNvi">
               <ref role="37wK5l" to="dxuu:~JFrame.setDefaultCloseOperation(int)" resolve="setDefaultCloseOperation" />
-              <node concept="10M0yZ" id="16_XGVrZp$G" role="37wK5m">
+              <node concept="10M0yZ" id="$kAeST0BdU" role="37wK5m">
+                <ref role="3cqZAo" to="dxuu:~WindowConstants.EXIT_ON_CLOSE" resolve="EXIT_ON_CLOSE" />
                 <ref role="1PxDUh" to="dxuu:~JFrame" resolve="JFrame" />
-                <ref role="3cqZAo" to="dxuu:~JFrame.EXIT_ON_CLOSE" resolve="EXIT_ON_CLOSE" />
               </node>
             </node>
           </node>
@@ -877,9 +877,9 @@
               </node>
               <node concept="liA8E" id="16_XGVrZaaQ" role="2OqNvi">
                 <ref role="37wK5l" to="dxuu:~JFrame.setDefaultCloseOperation(int)" resolve="setDefaultCloseOperation" />
-                <node concept="10M0yZ" id="16_XGVrZaaR" role="37wK5m">
+                <node concept="10M0yZ" id="$kAeST0ABm" role="37wK5m">
+                  <ref role="3cqZAo" to="dxuu:~WindowConstants.EXIT_ON_CLOSE" resolve="EXIT_ON_CLOSE" />
                   <ref role="1PxDUh" to="dxuu:~JFrame" resolve="JFrame" />
-                  <ref role="3cqZAo" to="dxuu:~JFrame.EXIT_ON_CLOSE" resolve="EXIT_ON_CLOSE" />
                 </node>
               </node>
             </node>
