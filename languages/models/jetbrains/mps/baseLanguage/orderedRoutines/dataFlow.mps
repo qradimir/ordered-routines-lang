@@ -8,7 +8,6 @@
   <imports>
     <import index="lvip" ref="r:ac58c924-04ba-4431-999e-4099836e6a5d(jetbrains.mps.baseLanguage.orderedRoutines.runtime)" />
     <import index="dau9" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.lang.dataFlow.framework.instructions(MPS.Core/)" />
-    <import index="r8vl" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.analyzers.runtime.framework(MPS.Core/)" />
     <import index="mu20" ref="r:fc94574f-a075-45e6-9927-48e7e87153e6(jetbrains.mps.analyzers.runtime.framework)" />
     <import index="tpem" ref="r:00000000-0000-4000-0000-011c895902c2(jetbrains.mps.baseLanguage.dataFlow)" />
     <import index="y83k" ref="r:433d48ef-df78-4c9d-85a8-21992e186e6b(jetbrains.mps.baseLanguage.orderedRoutines.structure)" />
@@ -624,8 +623,8 @@
             </node>
           </node>
           <node concept="2ZW3vV" id="5UkJunhQAL$" role="3clFbw">
-            <node concept="3uibUv" id="5UkJunhQBcH" role="2ZW6by">
-              <ref role="3uigEE" to="r8vl:~GeneratedInstruction" resolve="GeneratedInstruction" />
+            <node concept="3uibUv" id="$kAeSSZhTz" role="2ZW6by">
+              <ref role="3uigEE" to="mu20:6L60FDzMFhw" resolve="GeneratedInstruction" />
             </node>
             <node concept="37vLTw" id="5UkJunhQ_vz" role="2ZW6bz">
               <ref role="3cqZAo" node="5UkJunhQzUl" resolve="instruction" />

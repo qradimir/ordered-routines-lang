@@ -14,7 +14,6 @@
     <import index="1fjm" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.lang.dataFlow.framework(MPS.Core/)" />
     <import index="dau9" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.lang.dataFlow.framework.instructions(MPS.Core/)" />
     <import index="y83k" ref="r:433d48ef-df78-4c9d-85a8-21992e186e6b(jetbrains.mps.baseLanguage.orderedRoutines.structure)" />
-    <import index="r8vl" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.analyzers.runtime.framework(MPS.Core/)" />
     <import index="jdhs" ref="r:faa7578a-a2c5-4fcf-a040-7141550b6614(jetbrains.mps.baseLanguage.orderedRoutines.behavior)" implicit="true" />
     <import index="tpek" ref="r:00000000-0000-4000-0000-011c895902c0(jetbrains.mps.baseLanguage.behavior)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
@@ -836,8 +835,8 @@
               <node concept="3clFbH" id="5NL1O9CCIkI" role="3cqZAp" />
             </node>
             <node concept="2ZW3vV" id="3ftudi$xlSO" role="3clFbw">
-              <node concept="3uibUv" id="3ftudi$xlVH" role="2ZW6by">
-                <ref role="3uigEE" to="r8vl:~GeneratedInstruction" resolve="GeneratedInstruction" />
+              <node concept="3uibUv" id="$kAeSSZkxk" role="2ZW6by">
+                <ref role="3uigEE" to="mu20:6L60FDzMFhw" resolve="GeneratedInstruction" />
               </node>
               <node concept="37vLTw" id="3ftudi$xlE0" role="2ZW6bz">
                 <ref role="3cqZAo" node="3ftudi$wA2H" resolve="instruction" />
