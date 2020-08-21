@@ -127,14 +127,14 @@
       <concept id="1227096498176" name="jetbrains.mps.lang.typesystem.structure.PropertyMessageTarget" flags="ng" index="2ODE4t">
         <reference id="1227096521710" name="propertyDeclaration" index="2ODJFN" />
       </concept>
-      <concept id="1227096774658" name="jetbrains.mps.lang.typesystem.structure.MessageStatement" flags="ng" index="2OEH$v">
-        <child id="1227096802790" name="nodeToReport" index="2OEOjV" />
-        <child id="1227096836496" name="messageTarget" index="2OEWyd" />
-      </concept>
       <concept id="1195213580585" name="jetbrains.mps.lang.typesystem.structure.AbstractCheckingRule" flags="ig" index="18hYwZ">
         <child id="1195213635060" name="body" index="18ibNy" />
       </concept>
       <concept id="1195214364922" name="jetbrains.mps.lang.typesystem.structure.NonTypesystemRule" flags="ig" index="18kY7G" />
+      <concept id="3937244445246642777" name="jetbrains.mps.lang.typesystem.structure.AbstractReportStatement" flags="ng" index="1urrMJ">
+        <child id="3937244445246643443" name="messageTarget" index="1urrC5" />
+        <child id="3937244445246642781" name="nodeToReport" index="1urrMF" />
+      </concept>
       <concept id="1174642788531" name="jetbrains.mps.lang.typesystem.structure.ConceptReference" flags="ig" index="1YaCAy">
         <reference id="1174642800329" name="concept" index="1YaFvo" />
       </concept>
@@ -241,9 +241,6 @@
             <property role="Xl_RC" value="Cycle in order defintion : " />
           </node>
         </node>
-        <node concept="1YBJjd" id="pZevM1NZ_n" role="2OEOjV">
-          <ref role="1YBMHb" node="pZevM1NSvu" resolve="routineBlockStatement" />
-        </node>
         <node concept="2OqwBi" id="pZevM1NSKu" role="2MkoU_">
           <node concept="2OwXpG" id="74j9ZXg00Hg" role="2OqNvi">
             <ref role="2Oxat5" to="lvip:2VTUfnTq5Wu" resolve="success" />
@@ -251,6 +248,9 @@
           <node concept="37vLTw" id="pZevM1O405" role="2Oq$k0">
             <ref role="3cqZAo" node="pZevM1NSQf" resolve="res" />
           </node>
+        </node>
+        <node concept="1YBJjd" id="pZevM1NZ_n" role="1urrMF">
+          <ref role="1YBMHb" node="pZevM1NSvu" resolve="routineBlockStatement" />
         </node>
       </node>
     </node>
@@ -280,7 +280,7 @@
         <node concept="Xl_RD" id="pZevM1NIFr" role="2MkJ7o">
           <property role="Xl_RC" value="Not a statement" />
         </node>
-        <node concept="2OqwBi" id="pZevM1NIM3" role="2OEOjV">
+        <node concept="2OqwBi" id="pZevM1NIM3" role="1urrMF">
           <node concept="1YBJjd" id="hr5pouRz0I" role="2Oq$k0">
             <ref role="1YBMHb" node="hr5pouRyTY" resolve="routineDeclaration" />
           </node>
@@ -397,11 +397,11 @@
             </node>
           </node>
         </node>
-        <node concept="1YBJjd" id="4oTHx60K0K" role="2OEOjV">
-          <ref role="1YBMHb" node="4oTHx60Bbe" resolve="routineDeclaration" />
-        </node>
-        <node concept="2ODE4t" id="4oTHx612FH" role="2OEWyd">
+        <node concept="2ODE4t" id="4oTHx612FH" role="1urrC5">
           <ref role="2ODJFN" to="tpck:h0TrG11" resolve="name" />
+        </node>
+        <node concept="1YBJjd" id="4oTHx60K0K" role="1urrMF">
+          <ref role="1YBMHb" node="4oTHx60Bbe" resolve="routineDeclaration" />
         </node>
       </node>
       <node concept="3clFbH" id="7dIFls3V6YB" role="3cqZAp" />
@@ -496,9 +496,6 @@
             <property role="Xl_RC" value="Cycle found : " />
           </node>
         </node>
-        <node concept="1YBJjd" id="3ftudi$r7cU" role="2OEOjV">
-          <ref role="1YBMHb" node="3ftudi$nEbC" resolve="method" />
-        </node>
         <node concept="2OqwBi" id="3ftudi$r5Zk" role="2MkoU_">
           <node concept="37vLTw" id="3ftudi$r5Zl" role="2Oq$k0">
             <ref role="3cqZAo" node="3ftudi$r2ac" resolve="cycleTest" />
@@ -506,6 +503,9 @@
           <node concept="2OwXpG" id="3ftudi$r5Zm" role="2OqNvi">
             <ref role="2Oxat5" to="lvip:2VTUfnTq5Wu" resolve="success" />
           </node>
+        </node>
+        <node concept="1YBJjd" id="3ftudi$r7cU" role="1urrMF">
+          <ref role="1YBMHb" node="3ftudi$nEbC" resolve="method" />
         </node>
       </node>
       <node concept="1DcWWT" id="3ftudi$wA2E" role="3cqZAp">
@@ -648,7 +648,7 @@
                                 </node>
                               </node>
                             </node>
-                            <node concept="2OqwBi" id="3ftudi$BFBt" role="2OEOjV">
+                            <node concept="2OqwBi" id="3ftudi$BFBt" role="1urrMF">
                               <node concept="2GrUjf" id="3ftudi$B_2S" role="2Oq$k0">
                                 <ref role="2Gs0qQ" node="3ftudi$BiqK" resolve="executed" />
                               </node>
@@ -791,7 +791,7 @@
                                 </node>
                               </node>
                             </node>
-                            <node concept="37vLTw" id="dMC9QYw4AE" role="2OEOjV">
+                            <node concept="37vLTw" id="dMC9QYw4AE" role="1urrMF">
                               <ref role="3cqZAo" node="dMC9QYvRch" resolve="methodCall" />
                             </node>
                           </node>
