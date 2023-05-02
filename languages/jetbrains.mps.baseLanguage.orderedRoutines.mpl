@@ -6,7 +6,7 @@
     </modelRoot>
   </models>
   <facets>
-    <facet type="java">
+    <facet type="java" compile="mps" classes="mps" ext="yes">
       <classes generated="true" path="${module}/classes_gen" />
     </facet>
   </facets>
@@ -19,7 +19,7 @@
         </modelRoot>
       </models>
       <facets>
-        <facet type="java">
+        <facet type="java" compile="mps" classes="mps" ext="no">
           <classes generated="true" path="${module}/generator/classes_gen" />
         </facet>
       </facets>
@@ -56,7 +56,6 @@
         <module reference="220ad2a3-988f-4331-9309-68a672761eba(jetbrains.mps.baseLanguage.orderedRoutines)" version="0" />
         <module reference="1d27b505-d8b8-42a7-b931-70cdc88962de(jetbrains.mps.baseLanguage.orderedRoutines#6687369520215255908)" version="0" />
         <module reference="8aa8d0a9-9520-47f5-9e3b-eff27c28960d(jetbrains.mps.baseLanguage.orderedRoutines.runtime)" version="0" />
-        <module reference="52b81ac7-93fd-4e9e-b972-4995882da6d4(jetbrains.mps.baseLanguage.references.runtime)" version="0" />
         <module reference="e39e4a59-8cb6-498e-860e-8fa8361c0d90(jetbrains.mps.baseLanguage.scopes)" version="0" />
         <module reference="2d3c70e9-aab2-4870-8d8d-6036800e4103(jetbrains.mps.kernel)" version="0" />
         <module reference="ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)" version="0" />
