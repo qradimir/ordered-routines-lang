@@ -2,7 +2,7 @@
 <model ref="r:93630ce3-7fac-4e3b-aa05-bfe26be0a38f(jetbrains.mps.baseLanguage.orderedRoutines.intentions)">
   <persistence version="9" />
   <languages>
-    <use id="d7a92d38-f7db-40d0-8431-763b0c3c9f20" name="jetbrains.mps.lang.intentions" version="0" />
+    <use id="d7a92d38-f7db-40d0-8431-763b0c3c9f20" name="jetbrains.mps.lang.intentions" version="1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -99,8 +99,8 @@
       </concept>
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
-        <reference id="6733348108486823428" name="concept" index="1m5ApE" />
         <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
+        <child id="3906496115198199033" name="conceptArgument" index="3oSUPX" />
       </concept>
       <concept id="1143224127713" name="jetbrains.mps.lang.smodel.structure.Node_InsertPrevSiblingOperation" flags="nn" index="HtX7F">
         <child id="1143224127716" name="insertedNode" index="HtX7I" />
@@ -125,7 +125,6 @@
       <concept id="6407023681583031218" name="jetbrains.mps.lang.smodel.structure.AttributeAccess" flags="nn" index="3CFZ6_">
         <child id="6407023681583036852" name="qualifier" index="3CFYIz" />
       </concept>
-      <concept id="1140133623887" name="jetbrains.mps.lang.smodel.structure.Node_DeleteOperation" flags="nn" index="1PgB_6" />
       <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI" />
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
         <reference id="1138405853777" name="concept" index="ehGHo" />
@@ -136,6 +135,7 @@
       <concept id="1138056143562" name="jetbrains.mps.lang.smodel.structure.SLinkAccess" flags="nn" index="3TrEf2">
         <reference id="1138056516764" name="link" index="3Tt5mk" />
       </concept>
+      <concept id="1228341669568" name="jetbrains.mps.lang.smodel.structure.Node_DetachOperation" flags="nn" index="3YRAZt" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
@@ -207,12 +207,14 @@
                     <node concept="3clFbF" id="pZevM1Ixc2" role="3cqZAp">
                       <node concept="37vLTI" id="pZevM1I$$n" role="3clFbG">
                         <node concept="1PxgMI" id="5UkJunhBbVk" role="37vLTx">
-                          <ref role="1m5ApE" to="tpee:fz3vP1J" resolve="Expression" />
                           <node concept="2OqwBi" id="pZevM1KovI" role="1m5AlR">
                             <node concept="37vLTw" id="pZevM1I_Y_" role="2Oq$k0">
                               <ref role="3cqZAo" node="pZevM1Ir$k" resolve="it" />
                             </node>
                             <node concept="1$rogu" id="pZevM1Kp$E" role="2OqNvi" />
+                          </node>
+                          <node concept="chp4Y" id="6XDRZMPo7bu" role="3oSUPX">
+                            <ref role="cht4Q" to="tpee:fz3vP1J" resolve="Expression" />
                           </node>
                         </node>
                         <node concept="2OqwBi" id="pZevM1IyEb" role="37vLTJ">
@@ -220,7 +222,7 @@
                             <ref role="3cqZAo" node="pZevM1IsLP" resolve="statement" />
                           </node>
                           <node concept="3TrEf2" id="pZevM1IzqB" role="2OqNvi">
-                            <ref role="3Tt5mk" to="tpee:fzclF8k" />
+                            <ref role="3Tt5mk" to="tpee:fzclF8k" resolve="expression" />
                           </node>
                         </node>
                       </node>
@@ -263,7 +265,7 @@
         <node concept="3clFbF" id="pZevM1NCRr" role="3cqZAp">
           <node concept="2OqwBi" id="pZevM1ND2x" role="3clFbG">
             <node concept="2Sf5sV" id="pZevM1NCRp" role="2Oq$k0" />
-            <node concept="1PgB_6" id="pZevM1NDzH" role="2OqNvi" />
+            <node concept="3YRAZt" id="pZevM1NDzH" role="2OqNvi" />
           </node>
         </node>
       </node>
@@ -317,7 +319,7 @@
             <node concept="2OqwBi" id="2_Omw6NpuMZ" role="37vLTJ">
               <node concept="2Sf5sV" id="2_Omw6NpuLK" role="2Oq$k0" />
               <node concept="3TrEf2" id="7dIFls3RSmq" role="2OqNvi">
-                <ref role="3Tt5mk" to="y83k:7dIFls3Rlvt" />
+                <ref role="3Tt5mk" to="y83k:7dIFls3Rlvt" resolve="comment" />
               </node>
             </node>
           </node>
@@ -653,7 +655,7 @@
                           </node>
                         </node>
                       </node>
-                      <node concept="1PgB_6" id="3ftudi$$_7m" role="2OqNvi" />
+                      <node concept="3YRAZt" id="3ftudi$$_7m" role="2OqNvi" />
                     </node>
                   </node>
                 </node>
